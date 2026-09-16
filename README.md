@@ -1,86 +1,118 @@
-Fake News Detection 🔍
-A Machine Learning project that detects whether a given news article is Real or Fake based on its textual
-content.
-📌 Project Overview
-Fake news has become a major problem with the rapid growth of social media and online news platforms.
-This project uses Natural Language Processing (NLP) and Machine Learning techniques to analyze news
-text and classify it as either Real or Fake.
-🚀 Features
-• 
-• 
-• 
-• 
-• 
-Detects fake and real news
-Text preprocessing and cleaning
-NLP-based feature extraction
-Machine Learning classification
-Simple and easy-to-use prediction system
-🛠️ Technologies Used
-• 
-• 
-• 
-• 
-• 
-• 
-Python
-Pandas
-NumPy
-Scikit-learn
-Natural Language Processing (NLP)
-TF-IDF Vectorization
-📂 Project Structure
-Fake-News-Detection/
-│
-├── dataset/
-│   └── news.csv
-│
-├── fake_news_detection.py
-├── requirements.txt
-└── README.md
-⚙️ How It Works
-1. 
-2. 
-Collect the news dataset.
-Clean and preprocess the news text.
-1
-3. 
-4. 
-5. 
-6. 
-Convert text into numerical features using TF-IDF.
-Train a Machine Learning classification model.
-Test the model using unseen news.
-Predict whether the news is Real or Fake.
-▶️ Installation
-Clone the repository:
-git clone https://github.com/your-username/Fake-News-Detection.git
-cd Fake-News-Detection
-Install the required libraries:
-pip install-r requirements.txt
-Run the project:
-python fake_news_detection.py
-📊 Sample Output
-Enter News: [Enter news article here]
-Prediction: Fake News
-or
-Prediction: Real News
-🎯 Objective
-The main objective of this project is to demonstrate how Machine Learning and NLP can be used to
-automatically classify news and help users identify potentially misleading information.
-🔮 Future Improvements
-• 
-• 
-• 
-Improve model accuracy with larger datasets
-Add a web-based interface
-Support multiple languages
-2
-• 
-• 
-Use advanced NLP/deep learning models
-Deploy the application online
-👨‍💻 Author
-Aditya Moond
-B.Tech – Computer Science Engineering
-⭐ If you find this project useful, consider giving it a star!
+1. Extract the ZIP
+
+Extract:
+
+Fake_News_Detection-master.zip
+
+For example, put the extracted folder on your Desktop:
+
+cd ~/Desktop
+cd Fake_News_Detection-master
+
+Check the files:
+
+ls
+
+You should see files such as front.py, prediction.py, classifier.py, train.csv, etc.
+
+2. Create a GitHub repository
+
+On GitHub, create a new repository named:
+
+Fake-News-Detection
+
+Keep it empty — don't add README, .gitignore, or license yet.
+
+3. Configure Git
+
+Run these in Git Bash:
+
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+
+Check:
+
+git config --global --list
+4. Initialize your project
+
+Inside the project folder:
+
+cd ~/Desktop/Fake_News_Detection-master
+
+Then:
+
+git init
+git add .
+git commit -m "Initial commit"
+5. Connect it to GitHub
+
+Replace YOUR_USERNAME with your GitHub username:
+
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/Fake-News-Detection.git
+
+Verify:
+
+git remote -v
+6. Upload the project
+git push -u origin main
+
+If GitHub asks you to authenticate, complete the GitHub sign-in/authentication process.
+
+Then refresh your GitHub repository. Your project files should appear there.
+
+▶️ Run the project locally
+
+GitHub itself doesn't run the Python application. GitHub stores your code; you run the application on your computer (or deploy it to a hosting service).
+
+First check Python:
+
+python --version
+
+Create a virtual environment:
+
+python -m venv venv
+
+Activate it in Git Bash:
+
+source venv/Scripts/activate
+
+Then install dependencies:
+
+pip install pandas numpy scikit-learn nltk flask matplotlib seaborn
+
+If your project has requirements.txt, use this instead:
+
+pip install -r requirements.txt
+Run the Flask website
+
+From the project directory:
+
+python front.py
+
+You should get something similar to:
+
+Running on http://127.0.0.1:5000/
+
+Open this in your browser:
+
+http://127.0.0.1:5000/
+🔄 After making changes
+
+Whenever you modify your code or README:
+
+git add .
+git commit -m "Update project"
+git push
+
+That's all you need.
+
+⚠️ Important for your project
+
+Because your ZIP contains trained model files and datasets, don't blindly use git add . if the repository becomes very large. First check:
+
+du -sh .
+
+and:
+
+git status
